@@ -92,6 +92,7 @@ function togglesideslider() {
 }
 
 // timer
+// Countdown timer for May 11, 2024, 7:00 PM
 var countDownDateMay11 = new Date("May 11, 2024 19:00:00").getTime();
 var xMay11 = setInterval(function(){
     var now = new Date().getTime();
@@ -141,7 +142,7 @@ var xMay12 = setInterval(function(){
     }
 }, 1000);
 
-// Countdown timer for May 11, 2024, 7:00 PM
+
 
 
 // fade in js
