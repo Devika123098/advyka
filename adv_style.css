@@ -86,7 +86,13 @@
 
 .proin{
     margin-top: 0px;
-    margin-left: 500px;
+    margin-left: 700px;
+    margin-bottom: 100px;
+    display: flex;
+}
+.proin1{
+    margin-top: 0px;
+    margin-left: 700px;
     margin-bottom: 100px;
     display: flex;
 }
@@ -181,74 +187,136 @@
     opacity: 1;
 } */
 
-  
 [type=radio] {
     display: none;
-  }
-  
-  #slider {
-    /* height: auto; */
+}
+
+/* Styles for the first set of sliders */
+#slider {
     position: relative;
     perspective: 1000px;
     transform-style: preserve-3d;
-    margin-right: 700px;
+    margin-right: 900px;
     margin-top: 50px;
 }
-  
-  #slider label {
+
+#slider label {
     margin: auto;
-    /* margin-top: 100px; */
-    /* margin-left: 100px; */
     border-radius: 4px;
     position: absolute;
-    left: 0; right: 0;
+    margin-left: 100px;
     cursor: pointer;
     transition: transform 0.4s ease;
-  }
-  
-  #s1:checked ~ #slide4, #s2:checked ~ #slide5,
-  #s3:checked ~ #slide1, #s4:checked ~ #slide2,
-  #s5:checked ~ #slide3 {
-    box-shadow: 0 1px 4px 0 rgba(0,0,0,.37);
-    transform: translate3d(-30%,0,-200px);
-  }
-  
-  #s1:checked ~ #slide5, #s2:checked ~ #slide1,
-  #s3:checked ~ #slide2, #s4:checked ~ #slide3,
-  #s5:checked ~ #slide4 {
-    box-shadow: 0 6px 10px 0 rgba(0,0,0,.3), 0 2px 2px 0 rgba(0,0,0,.2);
-    transform: translate3d(-15%,0,-100px);
-  }
-  
-  #s1:checked ~ #slide1, #s2:checked ~ #slide2,
-  #s3:checked ~ #slide3, #s4:checked ~ #slide4,
-  #s5:checked ~ #slide5 {
-    box-shadow: 0 13px 25px 0 rgba(0,0,0,.3), 0 11px 7px 0 rgba(0,0,0,.19);
-    transform: translate3d(0,0,0);
-  }
-  
-  #s1:checked ~ #slide2, #s2:checked ~ #slide3,
-  #s3:checked ~ #slide4, #s4:checked ~ #slide5,
-  #s5:checked ~ #slide1 {
-    box-shadow: 0 6px 10px 0 rgba(0,0,0,.3), 0 2px 2px 0 rgba(0,0,0,.2);
-    transform: translate3d(15%,0,-100px);
-  }
-  
-  #s1:checked ~ #slide3, #s2:checked ~ #slide4,
-  #s3:checked ~ #slide5, #s4:checked ~ #slide1,
-  #s5:checked ~ #slide2 {
-    box-shadow: 0 1px 4px 0 rgba(0,0,0,.37);
-    transform: translate3d(30%,0,-200px);
-  }
- 
-  .card-slider {
+}
+
+/* Styles for the second set of sliders */
+#slider1 {
+    position: relative;
+    perspective: 1000px;
+    transform-style: preserve-3d;
+    margin-right: 900px;
+    margin-top: 50px;
+}
+
+#slider1 label {
+    margin: auto;
+    border-radius: 4px;
+    position: absolute;
+    margin-left: 100px;
+    cursor: pointer;
+    transition: transform 0.4s ease;
+}
+
+/* Specific styles for the first set of sliders */
+#s1:checked ~ #slide4, #s2:checked ~ #slide5,
+#s3:checked ~ #slide1, #s4:checked ~ #slide2,
+#s5:checked ~ #slide3 {
+  box-shadow: 0 1px 4px 0 rgba(0,0,0,.37);
+  transform: translate3d(-30%,0,-200px);
+}
+
+#s1:checked ~ #slide5, #s2:checked ~ #slide1,
+#s3:checked ~ #slide2, #s4:checked ~ #slide3,
+#s5:checked ~ #slide4 {
+  box-shadow: 0 6px 10px 0 rgba(0,0,0,.3), 0 2px 2px 0 rgba(0,0,0,.2);
+  transform: translate3d(-15%,0,-100px);
+}
+
+#s1:checked ~ #slide1, #s2:checked ~ #slide2,
+#s3:checked ~ #slide3, #s4:checked ~ #slide4,
+#s5:checked ~ #slide5 {
+  box-shadow: 0 13px 25px 0 rgba(0,0,0,.3), 0 11px 7px 0 rgba(0,0,0,.19);
+  transform: translate3d(0,0,0);
+}
+
+#s1:checked ~ #slide2, #s2:checked ~ #slide3,
+#s3:checked ~ #slide4, #s4:checked ~ #slide5,
+#s5:checked ~ #slide1 {
+  box-shadow: 0 6px 10px 0 rgba(0,0,0,.3), 0 2px 2px 0 rgba(0,0,0,.2);
+  transform: translate3d(15%,0,-100px);
+}
+
+#s1:checked ~ #slide3, #s2:checked ~ #slide4,
+#s3:checked ~ #slide5, #s4:checked ~ #slide1,
+#s5:checked ~ #slide2 {
+  box-shadow: 0 1px 4px 0 rgba(0,0,0,.37);
+  transform: translate3d(30%,0,-200px);
+}
+
+
+/* Specific styles for the second set of sliders */
+#s6:checked ~ #slide9, #s7:checked ~ #slide10,
+#s8:checked ~ #slide6, #s9:checked ~ #slide7,
+#s10:checked ~ #slide8 {
+  box-shadow: 0 1px 4px 0 rgba(0,0,0,.37);
+  transform: translate3d(-30%,0,-200px);
+}
+
+#s6:checked ~ #slide10, #s7:checked ~ #slide6,
+#s8:checked ~ #slide7, #s9:checked ~ #slide8,
+#s10:checked ~ #slide9 {
+  box-shadow: 0 6px 10px 0 rgba(0,0,0,.3), 0 2px 2px 0 rgba(0,0,0,.2);
+  transform: translate3d(-15%,0,-100px);
+}
+
+#s6:checked ~ #slide6, #s7:checked ~ #slide7,
+#s3:checked ~ #slide8, #s9:checked ~ #slide9,
+#s10:checked ~ #slide10 {
+  box-shadow: 0 13px 25px 0 rgba(0,0,0,.3), 0 11px 7px 0 rgba(0,0,0,.19);
+  transform: translate3d(0,0,0);
+}
+
+#s6:checked ~ #slide7, #s7:checked ~ #slide8,
+#s8:checked ~ #slide9, #s9:checked ~ #slide10,
+#s10:checked ~ #slide6 {
+  box-shadow: 0 6px 10px 0 rgba(0,0,0,.3), 0 2px 2px 0 rgba(0,0,0,.2);
+  transform: translate3d(15%,0,-100px);
+}
+
+#s6:checked ~ #slide8, #s7:checked ~ #slide9,
+#s8:checked ~ #slide10, #s9:checked ~ #slide6,
+#s10:checked ~ #slide7 {
+  box-shadow: 0 1px 4px 0 rgba(0,0,0,.37);
+  transform: translate3d(30%,0,-200px);
+}
+
+
+/* Additional styles for the cards in both sets */
+.card-slider {
     background: #ffffff00;
     backdrop-filter: blur(10px);
     width: 500px;
     height: 500px;
-  }
-  
-  
+}
+
+.card-slider1 {
+    background: #ffffff00;
+    backdrop-filter: blur(10px);
+    width: 500px;
+    height: 500px;
+}
+
+ 
   
   /* pro img end */
   /* timer begins */
@@ -405,6 +473,7 @@
 }
 
 @media(max-width:500px){
+    
     .pro{
         padding-bottom: 100px;
     }
@@ -414,14 +483,16 @@
         margin-bottom: 0px;
     }
     .proin{
-        margin-top: 100px;
+        margin-top: 0px;
         margin-left: 30px;
         margin-right: 10px;
         margin-bottom: 0px;
-        display: block;
+        /* display: block; */
     }
       #slider {
+        /* mtop: 0; */
         margin-right: 0px;
+        margin-bottom: 100px;
     }
       #slider label {
         margin: auto;
@@ -434,6 +505,24 @@
         transition: transform 0.4s ease;
       }
     .card-slider {
+        /* background: #fff; */
+        width: 250px;
+        height: 250px;
+      }
+      #slider1 {
+        margin-right: 0px;
+    }
+      #slider1 label {
+        margin: auto;
+        /* margin-top: 100px; */
+        /* margin-left: 100px; */
+        border-radius: 4px;
+        position: absolute;
+        left: 0; right: 0;
+        cursor: pointer;
+        transition: transform 0.4s ease;
+      }
+    .card-slider1 {
         /* background: #fff; */
         width: 250px;
         height: 250px;

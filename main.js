@@ -93,29 +93,56 @@ function togglesideslider() {
 
 // timer
 
-var countDownDate = new Date("May 12,2024 19:00:00").getTime();
-var x = setInterval(function(){
+// Countdown timer for May 12, 2024, 7:00 PM
+var countDownDateMay12 = new Date("May 12, 2024 19:00:00").getTime();
+var xMay12 = setInterval(function(){
     var now = new Date().getTime();
-    var distance = countDownDate - now;
+    var distance = countDownDateMay12 - now;
 
-    var days = Math.floor(distance / (1000 * 60 * 60* 24));
-    var hours = Math.floor((distance % (1000 * 60 * 60* 24)) / (1000 * 60 * 60));
+    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
     var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-    var seconds = Math.floor((distance % (1000 * 60)) / (1000));
+    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-    document.getElementById("days").innerHTML = days;
-    document.getElementById("hours").innerHTML = hours;
-    document.getElementById("minutes").innerHTML = minutes;
-    document.getElementById("seconds").innerHTML = seconds;
+    document.getElementById("daysMay12").innerHTML = days;
+    document.getElementById("hoursMay12").innerHTML = hours;
+    document.getElementById("minutesMay12").innerHTML = minutes;
+    document.getElementById("secondsMay12").innerHTML = seconds;
 
-    if(distance<0){
-        clearInterval(x);
-        document.getElementById("days").innerHTML = "L";
-        document.getElementById("hours").innerHTML = "I";
-        document.getElementById("minutes").innerHTML = "V";
-        document.getElementById("seconds").innerHTML = "E";
+    if(distance < 0){
+        clearInterval(xMay12);
+        document.getElementById("daysMay12").innerHTML = "L";
+        document.getElementById("hoursMay12").innerHTML = "I";
+        document.getElementById("minutesMay12").innerHTML = "V";
+        document.getElementById("secondsMay12").innerHTML = "E";
     }
-},1000);
+}, 1000);
+
+// Countdown timer for May 11, 2024, 7:00 PM
+var countDownDateMay11 = new Date("May 11, 2024 19:00:00").getTime();
+var xMay11 = setInterval(function(){
+    var now = new Date().getTime();
+    var distance = countDownDateMay11 - now;
+
+    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    document.getElementById("daysMay11").innerHTML = days;
+    document.getElementById("hoursMay11").innerHTML = hours;
+    document.getElementById("minutesMay11").innerHTML = minutes;
+    document.getElementById("secondsMay11").innerHTML = seconds;
+
+    if(distance < 0){
+        clearInterval(xMay11);
+        document.getElementById("daysMay11").innerHTML = "L";
+        document.getElementById("hoursMay11").innerHTML = "I";
+        document.getElementById("minutesMay11").innerHTML = "V";
+        document.getElementById("secondsMay11").innerHTML = "E";
+    }
+}, 1000);
+
 
 // fade in js
 const proimg = document.querySelectorAll(".proimg");
